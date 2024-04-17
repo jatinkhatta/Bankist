@@ -295,3 +295,12 @@ h2 {
 .timer {
   font-weight: 600;
 }
+
+.login_ids {
+  text-align: center;
+  margin-top: 20%;
+}
+
+.hidden {
+  display: none;
+}

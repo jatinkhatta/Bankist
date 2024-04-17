@@ -78,6 +78,8 @@ const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
+const login_ids = document.querySelector('.login_ids');
+
 /////////////////////////////////////////////////
 // Functions
 
@@ -174,6 +176,8 @@ btnLogin.addEventListener('click', function (e) {
     // Clear input fields
     inputLoginUsername.value = inputLoginPin.value = '';
     inputLoginPin.blur();
+
+    login_ids.classList.add('hidden');
 
     if (timer) clearInterval(timer);
     startLogOutTimer();
